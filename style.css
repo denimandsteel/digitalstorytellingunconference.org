@@ -1,0 +1,258 @@
+/* first for IE 4–8 */
+@font-face {
+  font-family: ostrich-regular-webfont;
+  src: url("fonts/ostrich-regular-webfont.eot");
+}
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: ostrich-regular-webfont;
+  src: url("fonts/ostrich-regular-webfont.woff") format("woff");
+}
+
+/* first for IE 4–8 */
+@font-face {
+  font-family: ostrich-light-webfont;
+  src: url("fonts/ostrich-light-webfont.eot");
+}
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: ostrich-light-webfont;
+  src: url("fonts/ostrich-light-webfont.woff") format("woff");
+}
+#wrapper {
+  width:714px;
+  margin:0 auto;
+  background-color:white;
+  padding:1em;
+}
+
+#register{
+  height: 212px;
+  width: 142;
+  float: right;
+  margin: -17px 15px 0 0;
+}
+
+.thumbs{
+  float: left;
+  margin: 0 8px 0 -2px;
+  padding: 0 0 15px 0;
+}
+
+#fancybox-overlay { background: #fff; }
+
+#sponsors{
+  float: center;
+  padding: 10px 5px;
+  margin:0 0 0 -12px;
+}
+
+#container {
+  width:690px;
+  padding:1em;
+  background-color:white;
+}
+
+#leftSidebar {
+  float:left;
+  width:163px;
+  padding:0 10px;
+  background-color:white;
+}
+
+#main {
+  float:left; 
+  width:350px;
+  padding:0px 30px 10px 0; 
+  background-color:white;
+}
+
+#rightSidebar {
+  float:left;
+  width:141px;
+  padding:0 5px;
+  background-color:white; 
+}
+
+#footer {
+  clear:both; 
+  padding:1em; 
+  background-color:white;
+}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } /* slightly enhanced, universal clearfix hack - http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/ */
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/ * html .clearfix { height: 1%; }
+
+.clearfix { display: block; } /* close commented backslash hack */
+
+#mc_embed_signup label {
+  display: block;
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+body {
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 18px;
+  width: 600px;
+  margin:auto;
+  color: #4E4F4E;
+}
+
+p { 
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  color: #4E4F4E; 
+  font-size: 16px;
+  line-height:18px;
+  text-align: left;
+}
+
+a { color:#742E42; }
+a:link { color:#742E42; }
+a:visited { color:#4E4F4E; }
+a:hover { text-decoration:none; }
+
+h1 { }
+
+h2, h3 {
+  font-family: ostrich-regular-webfont, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin:auto;
+  color: #742E42;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: left;
+}
+
+.logo a {
+  display: block;
+  text-indent: -9999px;
+  background: transparent url(images/logo.png) no-repeat top center;
+  height: 97px;
+  width: 393px;
+  color: #000;
+  text-decoration: none;
+}
+
+.left { 
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  color: #4E4F4E; 
+  font-size: 12px;
+  line-height:14px;
+  text-align: left;
+}
+
+p { 
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  color: #4E4F4E; 
+  font-size: 16px;
+  line-height:22px;
+  text-align: left;
+}
+
+p.location {
+  display: block;
+  font-family: ostrich-regular-webfont, Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 25px;
+  text-align: left;
+  color: #742E42;
+  margin: 10px 0px 0px 76px;
+
+}
+
+.head {
+  display: block;
+  font-family: ostrich-regular-webfont, Helvetica, Arial, sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #000;
+}
+
+.foot {
+  display: block;
+  font-family: ostrich-light-webfont, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  text-align: right;
+  color: #000;
+  margin-right: 10px;
+}
+
+.date {
+  display: block;
+  font-family: ostrich-regular-webfont, Helvetica, Arial, sans-serif;
+  font-size: 31px;
+  font-style: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #742E42;
+  margin: 0px 0px 0px 76px;
+}
+
+.head a { color: #B2C6CD; text-decoration: none; }
+
+.name {
+  float: left;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50px;
+  color: #4e4f4e;
+  padding: 7px 0px 90px 0px;
+}
+
+.subhead {
+  display: block;
+  font-family: ostrich-light-webfont, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+  }
+
+.work a.more,
+#nav li a,
+
+.more a {
+  text-align: center;
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 16px;
+  width: 330px;
+  margin:auto;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 27px 0;
+  display:block;
+  background: none repeat scroll 0 0 #DEA334;
+}
+
+.highlight { color: #DEA334; }
+.more { text-align: center; }
+.more a { }
+
+#subForm { text-align: center; }
+input[type="text"] { width: 140px;  }
