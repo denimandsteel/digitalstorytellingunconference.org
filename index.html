@@ -58,17 +58,17 @@
     <p>Offering affordable coworking space, The Network Hub gives startups a starting point and freelancers a place to work that isn’t home or the local cafe. Professionally staffed with a spacious, modern design and state of the art facilities, we cannot think of a better spot or more gracious hosts for the first Digital Storytelling Unconference, and couldn’t ask for a warmer welcome from our title sponsors.</p>
     <p>For meetings, a private office or shared hotdesk as well as virtual office services, look at what the Network Hub offers and just try to find a better price or more friendly people.</p>
 
-    <a class="fancybox thumbs" rel="THE NETWORK HUB" title="THE NETWORK HUB" href="images/credit-JeremyLimCA.png"><img src="images/thumb-credit-JeremyLimCA.png" alt="" /></a>
-    <a class="fancybox thumbs" rel="THE NETWORK HUB" title="THE NETWORK HUB" href="images/credit-Hummingbird604com2.png"><img src="images/thumb-credit-Hummingbird604com2.png" alt="" /></a>
-    <a class="fancybox thumbs" rel="THE NETWORK HUB" title="THE NETWORK HUB" href="images/credit-Hummingbird604com.png"><img src="images/thumb-credit-Hummingbird604com.png" alt="" /></a>
+    <a class="fancybox thumbs" data-fancybox-group="THE NETWORK HUB" title="The Network Hub Main Hall" href="images/credit-JeremyLimCA.png"><img src="images/thumb-credit-JeremyLimCA.png" alt="" /></a>
+    <a class="fancybox thumbs" data-fancybox-group="THE NETWORK HUB" title="The Network Hub Lobby" href="images/credit-Hummingbird604com2.png"><img src="images/thumb-credit-Hummingbird604com2.png" alt="" /></a>
+    <a class="fancybox thumbs" data-fancybox-group="THE NETWORK HUB" title="The Network Hub Workspace" href="images/credit-Hummingbird604com.png"><img src="images/thumb-credit-Hummingbird604com.png" alt="" /></a>
 
     <h2 class='head'>the river market</h2>
 
     <p>In the heart of New Westminster a well-kept secret is quickly becoming a rejuvenated public centre. The River Market is at the centre of that change, set against the shore of the Fraser River and winding rail lines. A  strong sense of industrial history and optimisim can be felt throughout.</p>
 
-    <a class="fancybox thumbs" rel="gallery2" title="THE RIVER MARKET" href="images/RiverMrktPSPoetryBoard.png"><img src="images/thumb-RiverMrktPSPoetryBoard.png" alt="" /></a>
-    <a class="fancybox thumbs" rel="gallery2" title="THE RIVER MARKET" href="images/RiverMarketGWT.png"><img src="images/thumb-RiverMarketGWT.png" alt="" /></a>
-    <a class="fancybox thumbs" rel="gallery2" title="THE RIVER MARKET" href="images/RiverMarketFoodHall.png"><img src="images/thumb-RiverMarketFoodHall.png" alt="" /></a>
+    <a class="fancybox thumbs" data-fancybox-group="gallery2" title="The River Market Outside" href="images/RiverMrktPSPoetryBoard.png"><img src="images/thumb-RiverMrktPSPoetryBoard.png" alt="" /></a>
+    <a class="fancybox thumbs" data-fancybox-group="gallery2" title="The River Market Tea Shop" href="images/RiverMarketGWT.png"><img src="images/thumb-RiverMarketGWT.png" alt="" /></a>
+    <a class="fancybox thumbs" data-fancybox-group="gallery2" title="The River Market Food Hall" href="images/RiverMarketFoodHall.png"><img src="images/thumb-RiverMarketFoodHall.png" alt="" /></a>
 
     <h2 class='head'>FAQ</h2>
     <div id="faq">
@@ -135,14 +135,15 @@
   </div>
 </div>
 <script type="text/javascript" src="fancybox/lib/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('.fancybox').fancybox({
       openEffect  : 'none',
       closeEffect : 'none',
       prevEffect  : 'none',
-      nextEffect  : 'none'
+      nextEffect  : 'none',
+      loop: false
     });
   });
   $.getJSON('http://search.twitter.com/search.json?callback=?', {
