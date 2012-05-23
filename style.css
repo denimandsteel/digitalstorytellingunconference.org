@@ -19,98 +19,28 @@
   font-family: ostrich-light-webfont;
   src: url("fonts/ostrich-light-webfont.woff") format("woff");
 }
-#wrapper {
-  width:714px;
-  margin:0 auto;
-  background-color:white;
-  padding:1em;
-}
-
-#register{
-  height: 212px;
-  width: 142;
-  float: right;
-  margin: -17px 15px 0 0;
-}
-
-.thumbs{
-  float: left;
-  margin: 0 8px 0 -2px;
-  padding: 0 0 15px 0;
-}
-
-#fancybox-overlay { background: #fff; }
-
-#sponsors{
-  float: center;
-  padding: 10px 5px;
-  margin:0 0 0 -12px;
-}
-
-#container {
-  width:690px;
-  padding:1em;
-  background-color:white;
-}
-
-#leftSidebar {
-  float:left;
-  width:163px;
-  padding:0 10px;
-  background-color:white;
-}
-
-#main {
-  float:left; 
-  width:350px;
-  padding:0px 30px 10px 0; 
-  background-color:white;
-}
-
-#rightSidebar {
-  float:left;
-  width:141px;
-  padding:0 5px;
-  background-color:white; 
-}
-
-#footer {
-  clear:both; 
-  padding:1em; 
-  background-color:white;
-}
-
-.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } /* slightly enhanced, universal clearfix hack - http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/ */
-
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/ * html .clearfix { height: 1%; }
-
-.clearfix { display: block; } /* close commented backslash hack */
-
-#mc_embed_signup label {
-  display: block;
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
-  font-weight: 100;
-  padding-bottom: 10px;
-}
 
 body {
   font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 16px;
   line-height: 18px;
-  width: 600px;
   margin:auto;
   color: #4E4F4E;
 }
 
-p { 
+p {
   font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
-  font-weight: 100;
-  color: #4E4F4E; 
+  font-weight: 300;
+  color: #4E4F4E;
   font-size: 16px;
-  line-height:18px;
+  line-height:22px;
   text-align: left;
+}
+
+p strong {
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 500;
 }
 
 a { color:#742E42; }
@@ -147,21 +77,12 @@ h3 {
   text-decoration: none;
 }
 
-.left { 
+.left {
   font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
-  font-weight: 100;
-  color: #4E4F4E; 
+  font-weight: 300;
+  color: #4E4F4E;
   font-size: 12px;
   line-height:14px;
-  text-align: left;
-}
-
-p { 
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
-  font-weight: 100;
-  color: #4E4F4E; 
-  font-size: 16px;
-  line-height:22px;
   text-align: left;
 }
 
@@ -174,7 +95,6 @@ p.location {
   text-align: left;
   color: #742E42;
   margin: 10px 0px 0px 76px;
-
 }
 
 .head {
@@ -187,7 +107,7 @@ p.location {
   color: #000;
 }
 
-.foot {
+a.top {
   display: block;
   font-family: ostrich-light-webfont, Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -196,6 +116,7 @@ p.location {
   text-align: right;
   color: #000;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .date {
@@ -231,13 +152,10 @@ p.location {
   color: #000000;
   }
 
-.work a.more,
-#nav li a,
-
 .more a {
   text-align: center;
   font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   width: 330px;
@@ -250,9 +168,85 @@ p.location {
   background: none repeat scroll 0 0 #DEA334;
 }
 
-.highlight { color: #DEA334; }
-.more { text-align: center; }
-.more a { }
+#mc_embed_signup label {
+  display: block;
+  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
 
-#subForm { text-align: center; }
-input[type="text"] { width: 140px;  }
+#wrapper {
+  width:714px;
+  margin:0 auto;
+  background-color:white;
+  padding:1em;
+}
+
+#register{
+  height: 212px;
+  width: 142;
+  float: right;
+  margin: -17px 15px 0 0;
+}
+
+.thumbs{
+  float: left;
+  margin: 0 8px 0 -2px;
+  padding: 0 0 15px 0;
+}
+
+#fancybox-overlay { background: #fff; }
+
+.sponsors {
+  float: center;
+  padding: 10px 0px;
+}
+.sponsors img { margin-left: -5px; }
+
+hr {
+  margin-right: 20px;
+  border: none;
+  border-top: 1px solid #4E4F4E;
+}
+
+#container {
+  width:690px;
+  padding:1em;
+  background-color:white;
+}
+
+#leftSidebar {
+  float:left;
+  width:163px;
+  padding:0 10px;
+  background-color:white;
+}
+
+#main {
+  float:left;
+  width:350px;
+  padding:0px 30px 10px 0;
+  background-color:white;
+}
+
+#rightSidebar {
+  float:left;
+  width:141px;
+  padding:0 5px;
+  background-color:white;
+}
+
+#rightSidebar p {
+  margin: 0em 0 1em 0;
+}
+
+#footer {
+  clear:both;
+  padding:1em;
+  background-color:white;
+}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } /* slightly enhanced, universal clearfix hack - http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/ */
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/ * html .clearfix { height: 1%; }
+.clearfix { display: block; } /* close commented backslash hack */
