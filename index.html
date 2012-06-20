@@ -137,6 +137,11 @@
 
     <p id="tweets"><br />Tweet <b>#DSUVan2012</b> and we'll see it here.</p>
 
+    <p>
+      <a href="https://twitter.com/intent/tweet?button_hashtag=DSUVan2012" class="twitter-hashtag-button" data-related="kaishinchu">Tweet #DSUVan2012</a>
+      <a href="https://twitter.com/dsuvancouver" class="twitter-follow-button" data-show-count="false">Follow @dsuvancouver</a>
+    </p>
+
     <h2 class='subhead'>#DSUVan2012</h2>
     <h2 class="subhead">Organized by</h2>
     <p><a href="http://twitter.com/denimandsteel">@denimandsteel</a><br />
@@ -170,6 +175,8 @@
       $('<div class="tweet">').html('<div class="tweet"><a href="http://twitter.com/' + item.from_user + '/status/' + item.id + '"><img width="20" height="20" src="' + item.profile_image_url + '" /></a>' + item.text + '</div>').appendTo('#tweets');
     });
   });
+
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 </body>
 </html>
