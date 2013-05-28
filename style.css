@@ -1,5 +1,16 @@
 /* first for IE 4–8 */
 @font-face {
+  font-family: ostrich-black-webfont;
+  src: url("fonts/ostrich-black-webfont.eot");
+}
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: ostrich-black-webfont;
+  src: url("fonts/ostrich-black-webfont.woff") format("woff");
+}
+
+/* first for IE 4–8 */
+@font-face {
   font-family: ostrich-regular-webfont;
   src: url("fonts/ostrich-regular-webfont.eot");
 }
@@ -9,19 +20,8 @@
   src: url("fonts/ostrich-regular-webfont.woff") format("woff");
 }
 
-/* first for IE 4–8 */
-@font-face {
-  font-family: ostrich-light-webfont;
-  src: url("fonts/ostrich-light-webfont.eot");
-}
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: ostrich-light-webfont;
-  src: url("fonts/ostrich-light-webfont.woff") format("woff");
-}
-
 body {
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -30,7 +30,7 @@ body {
 }
 
 p {
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #4E4F4E;
   font-size: 16px;
@@ -38,10 +38,10 @@ p {
   text-align: left;
 }
 
-a { color:#742E42; }
-a:link { color:#742E42; }
+a { color:#b4008e; }
+a:link { color:#b4008e; }
 a:visited { color:#4E4F4E; }
-a:hover { text-decoration:none; }
+a:hover { color: #e250c7; }
 
 h1 { }
 
@@ -50,11 +50,11 @@ h2 {
   font-size: 36px;
   text-align: left;
   margin:auto;
-  color: #742E42;
+  color: #b4008e;
 }
 
 h3 {
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin: 1em 0 0;
@@ -64,14 +64,15 @@ h3 {
   display: block;
   text-indent: -9999px;
   background: transparent url(images/logo.png) no-repeat top center;
-  height: 97px;
-  width: 393px;
+  height: 90px;
+  width: 365px;
   color: #000;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .left {
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #4E4F4E;
   font-size: 12px;
@@ -86,13 +87,13 @@ p.location {
   font-style: normal;
   line-height: 25px;
   text-align: left;
-  color: #742E42;
+  color: #b4008e;
   margin: 10px 0px 0px 76px;
 }
 
 .head {
   display: block;
-  font-family: ostrich-regular-webfont, Helvetica, Arial, sans-serif;
+  font-family: ostrich-black-webfont, Helvetica, Arial, sans-serif;
   font-size: 23px;
   font-style: normal;
   line-height: 24px;
@@ -102,8 +103,8 @@ p.location {
 
 a.top {
   display: block;
-  font-family: ostrich-light-webfont, Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family: ostrich-regular-webfont, Helvetica, Arial, sans-serif;
+  font-size: 22px;
   font-style: normal;
   line-height: 24px;
   text-align: right;
@@ -119,8 +120,11 @@ a.top {
   font-style: normal;
   line-height: 24px;
   text-align: left;
-  color: #742E42;
+  color: #b4008e;
   margin: 0px 0px 0px 76px;
+}
+.date.head {
+  margin-left: 0;
 }
 
 .head a { color: #B2C6CD; text-decoration: none; }
@@ -137,20 +141,25 @@ a.top {
 
 .subhead {
   display: block;
-  font-family: ostrich-regular-webfont, Helvetica, Arial, sans-serif;
+  font-family: ostrich-black-webfont, Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-style: normal;
   line-height: 20px;
   text-align: left;
   color: #000000;
-  }
+  margin: 30px 0 10px 0;
+}
+#leftSidebar .subhead:first-child,
+#rightSidebar .subhead:first-child {
+  margin-top: 0;
+}
 
 .more a {
   text-align: center;
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 22px;
   width: 330px;
   margin:auto;
   color: white;
@@ -158,12 +167,19 @@ a.top {
   padding: 10px;
   margin: 27px 0;
   display:block;
-  background: none repeat scroll 0 0 #DEA334;
+  background: none repeat scroll 0 0 #b4008e;
+}
+.more a span {
+  font-size: 18px;
+}
+
+.more a:hover {
+  background: #e250c7;
 }
 
 #mc_embed_signup label {
   display: block;
-  font-family: 'depot-new-web',Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   padding-bottom: 10px;
 }
@@ -173,13 +189,14 @@ a.top {
   margin:0 auto;
   background-color:white;
   padding:1em;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 }
 
 #register{
   height: 212px;
-  width: 142;
+  width: 142px;
   float: right;
-  margin: -17px 15px 0 0;
+  margin: -16px 4px 0 0;
 }
 
 .thumbs{
@@ -234,7 +251,7 @@ hr {
 
 #rightSidebar form { margin-bottom: 1em; }
 
-.tweet { margin-bottom: 0.5em; }
+.tweet { margin-bottom: 0.5em; font-size: 14px; }
 .tweet img { vertical-align: middle; margin-right: 5px; }
 p#tweet-more { margin-top: -0.5em; }
 
