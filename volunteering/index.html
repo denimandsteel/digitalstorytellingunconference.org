@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Volunteering - Digital Storytelling Unconference - July 13 2013 - Vancouver</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=755">
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <script type="text/javascript" src="http://use.typekit.com/lwj0dhg.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<link href="../fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="../style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+<div id="register"><a href='http://dsuvan2013.eventbrite.com'><img width="142" height="212" alt="Register Here" src="../images/register.png"></a></div>
+
+  <h1 class="logo"><a href="/">DSU</a></h1>
+
+  <div id="container" class="date">
+    <h2 class="date">Volunteering</h2>
+  </div>
+  <div id="leftSidebar">
+    &nbsp;
+  </div>
+  </div>
+  <div id="main">
+    <h2 class="head">Call for volunteers!</h2>
+    <p>Do you want to get the most of of the 2013 Digital Storytelling Unconference? Join our amazing team of volunteers and help make it another successful event.</p>
+
+    <p>We have a few opportunities, each with different commitments, so let us know how you can best help and we'll get back to you. It's important for you to be involved and we want you to participate in as many sessions as possible. We have three requirements for ALL volunteers regardless of job or duration: you love stories, you're reliable and you're friendly. If that sounds like you please fill out our volunteer application.</p>
+
+    <p>Want to know more? Here's what you'll actually be doing:</p>
+
+    <h2 class="head">Registration:</h2>
+    <p>Check in registered attendees and hand out name tags. Being an organized morning person helps here.</p>
+
+    <h2 class="head">Room Runners:</h2>
+    <p>Work with presenters, organizers, and attendees to guarantee flow in each session. Make sure there is water for speakers and proactively provide support as needed. Help keep things running on time; have one eye on the clock and give presenters a "heads-up" when they're down to 10 & 5 minutes, let them know when their time is up.  </p>
+
+    <h2 class="head">Social Journalists:</h2>
+    <p>Work with presenters and room runners to record "key points" in each session and take candid photos throughout the day. Poll the audience after each session and continually encourage them to share observations and testimonials with the right hashtag. Participate in our post-mortem/overview.</p>
+
+    <h2 class="head">Casual Runners:</h2>
+    <p>Handle the unexpected things that pop up. Think on your feet. Ask the right questions. This includes pre-event and miscellaneous prep, helping out with on-location tasks, directing attendees to restrooms, refreshments/food, and running errands as needed. Make introductions, connect people, casually remind attendees what is going on and when, where.</p>
+
+    <p>There you have it! Opportunities for everyone. <strong>Please fill out our volunteer form</strong> and let us know how you want to help!</p>
+
+    <p>Expect a follow up email to determine your expertise. Thanks in advance.</p>
+
+    <br>
+    <iframe style="border: 1px solid #ccc;" src="https://docs.google.com/a/denimandsteel.com/spreadsheet/embeddedform?formkey=dE1zaWl0a3ZfSll0cDZBWHZJcUpvRWc6MQ" width="350" height="1313" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <a class='top' href="#wrapper">back to top</a>
+
+  </div>
+
+  <div id="rightSidebar">
+    &nbsp;
+</div>
+<script type="text/javascript" src="../fancybox/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.fancybox').fancybox({
+      openEffect  : 'none',
+      closeEffect : 'none',
+      prevEffect  : 'none',
+      nextEffect  : 'none',
+      loop: false
+    });
+  });
+  $.getJSON('http://search.twitter.com/search.json?callback=?', {
+    q: 'DSUVancouver OR DSUVan2013 OR DSUVan',
+    rpp: 5
+  },
+  function(data) {
+    if (data.results.length > 0) {
+      $('#tweets').html('');
+    }
+    $.each(data.results, function(i, item){
+      $('<div class="tweet">').html('<div class="tweet"><a href="http://twitter.com/' + item.from_user + '/status/' + item.id + '"><img width="20" height="20" src="' + item.profile_image_url + '" /></a>' + item.text + '</div>').appendTo('#tweets');
+    });
+  });
+
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+</body>
+</html>
