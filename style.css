@@ -297,6 +297,7 @@ p#tweet-more { margin-top: -0.5em; }
     float: none;
     width: auto;
   }
+  #main { padding-right: 10px; }
   #leftSidebar,
   #rightSidebar {
     background: #eee;
@@ -307,7 +308,7 @@ p#tweet-more { margin-top: -0.5em; }
     width: 280px;
     background-size: 280px 69px;
   }
-  .more a { width: 100%; }
+  .more a { width: 95%; }
   #register {
     background: none;
     display: none;
