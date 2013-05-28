@@ -90,6 +90,7 @@ p.location {
   color: #b4008e;
   margin: 10px 0px 0px 76px;
 }
+p.location a:visited { color: #b4008e; }
 
 .head {
   display: block;
@@ -149,6 +150,9 @@ a.top {
   color: #000000;
   margin: 30px 0 10px 0;
 }
+.subhead span {
+  display: block;
+}
 #leftSidebar .subhead:first-child,
 #rightSidebar .subhead:first-child {
   margin-top: 0;
@@ -167,7 +171,7 @@ a.top {
   padding: 10px;
   margin: 27px 0;
   display:block;
-  background: none repeat scroll 0 0 #b4008e;
+  background: #b4008e;
 }
 .more a span {
   font-size: 18px;
@@ -183,6 +187,7 @@ a.top {
   font-weight: 300;
   padding-bottom: 10px;
 }
+#mc_embed_signup label span { display: block; }
 
 #wrapper {
   width:714px;
@@ -192,14 +197,20 @@ a.top {
   box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 }
 
-#register{
+#register {
+  display: block;
+  background: url(images/register.png) top left no-repeat;
   height: 212px;
   width: 142px;
   float: right;
   margin: -16px 4px 0 0;
 }
+#register-mobile {
 
-.thumbs{
+  display: none;
+}
+
+.thumbs {
   float: left;
   margin: 0 8px 0 -2px;
   padding: 0 0 15px 0;
@@ -237,6 +248,11 @@ hr {
   padding:0px 30px 10px 0;
   background-color:white;
 }
+iframe {
+  width: 350px;
+  height: 1180px;
+  border: 1px solid #ccc;
+}
 
 #rightSidebar {
   float:left;
@@ -250,8 +266,8 @@ hr {
 }
 
 #rightSidebar form { margin-bottom: 1em; }
-
-.tweet { margin-bottom: 0.5em; font-size: 14px; }
+.stacked a { display: block; }
+.tweet { margin-bottom: 1em; font-size: 14px; }
 .tweet img { vertical-align: middle; margin-right: 5px; }
 p#tweet-more { margin-top: -0.5em; }
 
@@ -259,6 +275,76 @@ p#tweet-more { margin-top: -0.5em; }
   clear:both;
   padding:1em;
   background-color:white;
+}
+
+@media only screen and (max-width: 479px) {
+  body, p { font-size: 14px }
+  .head { font-size: 20px; margin-top: 25px; }
+  h3 { font-size: 14px; font-weight: bold; }
+  #wrapper {
+    padding: 0.5em;
+  }
+  #container {
+    padding: 10px 10px 20px;
+  }
+  #container, .date, p.location {
+    margin: 0;
+  }
+  #wrapper,
+  #leftSidebar,
+  #main,
+  #rightSidebar {
+    float: none;
+    width: auto;
+  }
+  #leftSidebar,
+  #rightSidebar {
+    background: #eee;
+    margin: 20px 0;
+    padding: 10px;
+  }
+  .logo a {
+    width: 280px;
+    background-size: 280px 69px;
+  }
+  .more a { width: 100%; }
+  #register {
+    background: none;
+    display: none;
+  }
+  .subhead span { display: inline; }
+  .thumbs img { width: 86px; }
+  iframe { width: 300px; }
+
+  #leftSidebar .subhead { text-align: center; margin-top: 10px !important; }
+  .sponsors .subhead { display: none; }
+  .sponsors a { display: block; text-align: center; }
+  a.top { display: none; }
+
+  #mc_embed_signup label span { display: inline; }
+  #mc_embed_signup .clear { display: inline; }
+
+  .stacked a {
+    display: inline-block;
+    background: #b4008e;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 3px 5px;
+  }
+  #register-mobile { display: block; }
+  #register-mobile {
+    display: block;
+    background: url(images/register-mobile.jpg) top left no-repeat;
+    background-size: 305px 140px;
+    width: 305px;
+    height: 140px;
+  }
+  .survey #container,
+  .survey #leftSidebar,
+  .survey #rightSidebar {
+    display: none;
+  }
 }
 
 .clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } /* slightly enhanced, universal clearfix hack - http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack/ */
