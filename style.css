@@ -332,6 +332,7 @@ p#tweet-more { margin-top: -0.5em; }
     margin: 5px 0;
     padding: 3px 5px;
   }
+  .stacked a:hover { background: #e250c7; }
   #register-mobile { display: block; }
   #register-mobile {
     display: block;
