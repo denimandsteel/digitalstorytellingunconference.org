@@ -29,7 +29,8 @@
   <h1 class="logo"><a href="/">DSU</a></h1>
 
   <div id="container" class="date">
-    <h2 class="date">July 13, 2013</h2>
+    <h2 class="date"><strike>July 13, 2013</strike></h2>
+    <h2 class="date" style="margin-top: 13px;">October 5, 2013</h2>
     <p class="location">9.30am to 5.00pm<br /><br />
                         The Network Hub - New West<br />
                         River Market - <a href="http://goo.gl/maps/m7b04">205-810 Quayside Dr.</a><br />
@@ -39,19 +40,14 @@
   <div id="leftSidebar">
     <h2 class='subhead'><span>Thank you to our </span>Sponsors/Partners!</h2>
     <div class="sponsors">
-      <h2 class='subhead'>Title sponsor</h2>
-      <a href="http://www.thenetworkhub.ca/"><img width="153" height="33" style="margin-top: 10px;" alt="The Network Hub" src="images/NetworkHubLogo.png"></a>
-    </div>
-    <hr />
-    <div class="sponsors">
-      <h2 class='subhead'>With support from</h2>
       <a href='http://rivermarket.ca/'><img width="153" height="153" style="margin-top: 10px;" alt="River Market" src="images/RiverMarketLogo.png"></a>
+      <a href="http://www.thenetworkhub.ca/"><img width="153" height="33" style="margin-top: 10px;" alt="The Network Hub" src="images/NetworkHubLogo.png"></a>
       <a href='http://echomemoirs.com/'><img width="153" height="77" style="margin-top: 10px;" alt="Echo Memoirs" src="images/echo-memoirs.png"></a>
-<!--      <a href='http://www.helm-studio.com/'><img width="153" height="77" style="margin-top: 10px;" alt="HELM Studio" src="images/helm-logo.png"></a>
--->
     </div>
   </div>
   <div id="main">
+    <h2 class="head">Special Note</h2>
+    <p><em>We've been hearing from many who hoped to attend but had conflicts with summer travel plans and other events. To ensure the most access for the most people, we've made the tough decision to postpone the event until October 5. All the details will remain the same: location, ticket prices, format, and so on. Only the date is changing. We apologize for any inconvenience, and look forward to seeing you in the fall.</em></p>
     <h2 class='head'>Details</h2>
     <p>As digital tools open up new kinds of expression, they intertwine more deeply with the timeless art of storytelling. With more places and tools to find your voice, one question becomes more urgent: <em>what does it all add up to?</em></p>
     <p>Last year technologists, journalists, game-makers, marketers and educators came together for Metro Vancouver's first Storytelling Unconference specifically focussed on digital. This year we're doing it all again, and something more.</p>
@@ -139,8 +135,8 @@
     </div>
 
     <h2 class='subhead'>Twitter Buzz</h2>
-    <p id="tweets">Tweet #DSUVan2013 and we'll see it here!</p>
-    <p id="tweet-more"><a href="https://twitter.com/#!/search/realtime/DSUVancouver%20OR%20DSUVan2013%20OR%20DSUVan">more</a></p>
+    <!-- <p id="tweets">Tweet #DSUVan2013 and we'll see it here!</p>
+    <p id="tweet-more"><a href="https://twitter.com/#!/search/realtime/DSUVancouver%20OR%20DSUVan2013%20OR%20DSUVan">more</a></p> -->
     <p>
       <a href="https://twitter.com/intent/tweet?button_hashtag=DSUVan2013" class="twitter-hashtag-button" data-related="kaishinchu">Tweet #DSUVan2013</a>
       <a href="https://twitter.com/dsuvancouver" class="twitter-follow-button" data-show-count="false">Follow @dsuvancouver</a>
@@ -170,20 +166,20 @@
       });
     }
   });
-  $.getJSON('http://search.twitter.com/search.json?callback=?', {
-    q: 'DSUVancouver OR DSUVan2013 OR DSUVan',
-    rpp: 5
-  },
-  function(data) {
-    if (data.results.length > 0) {
-      $('#tweets').html('');
-    }
-    $.each(data.results, function(i, item){
-      $('<div class="tweet">').html('<div class="tweet"><a href="http://twitter.com/' + item.from_user + '/status/' + item.id + '"><img width="20" height="20" src="' + item.profile_image_url + '" /></a>' + item.text + '</div>').appendTo('#tweets');
-    });
-  });
+  // $.getJSON('http://search.twitter.com/search.json?callback=?', {
+  //   q: 'DSUVancouver OR DSUVan2013 OR DSUVan',
+  //   rpp: 5
+  // },
+  // function(data) {
+  //   if (data.results.length > 0) {
+  //     $('#tweets').html('');
+  //   }
+  //   $.each(data.results, function(i, item){
+  //     $('<div class="tweet">').html('<div class="tweet"><a href="http://twitter.com/' + item.from_user + '/status/' + item.id + '"><img width="20" height="20" src="' + item.profile_image_url + '" /></a>' + item.text + '</div>').appendTo('#tweets');
+  //   });
+  // });
 
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  // !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
