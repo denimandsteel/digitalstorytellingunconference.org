@@ -248,7 +248,7 @@ hr {
   padding:0px 30px 10px 0;
   background-color:white;
 }
-iframe {
+.survey iframe {
   width: 350px;
   height: 1180px;
   border: 1px solid #ccc;
@@ -315,7 +315,7 @@ p#tweet-more { margin-top: -0.5em; }
   }
   .subhead span { display: inline; }
   .thumbs img { width: 86px; }
-  iframe { width: 300px; }
+  .survey iframe { width: 300px; }
 
   #leftSidebar .subhead { text-align: center; margin-top: 10px !important; }
   .sponsors .subhead { display: none; }
