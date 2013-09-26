@@ -248,10 +248,10 @@ hr {
   padding:0px 30px 10px 0;
   background-color:white;
 }
-iframe { border: 1px solid #ccc; }
 .survey iframe {
   width: 350px;
   height: 1180px;
+  border: 1px solid #ccc;
 }
 
 #rightSidebar {
